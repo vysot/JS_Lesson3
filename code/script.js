@@ -4,7 +4,7 @@ document.write("Первоначальный массив: " + style.join(" - ")
 style.push("Рок-н-ролл");
 document.write("Добавление элемета в конец массива: " + style.join(" - ") + "</br>");
 
-style.splice(style.length / 2, 1, "Классика");
+style.splice(Math.floor(style.length / 2), 1, "Классика");
 document.write("Замена значения в середине массива: " + style.join(" - ") + "</br>"); 
 
 let styleFirst = style.shift();
